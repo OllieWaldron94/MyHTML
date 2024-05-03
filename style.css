@@ -16,6 +16,41 @@
     margin-bottom: 30px;
 }
 
+.gallery2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    max-width: calc(300px * 3 + 40px);
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.white-txt {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.container-txt {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.white-txtlarge {
+    color: white;
+    font-size: 30px;
+    flex: 1;
+}
+
+
 
 body{
     background-color: #000;
@@ -48,10 +83,18 @@ body{
     object-fit: cover;
   }
 
+.gallery2 img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+
 h1 {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 60px;
+    color: white;
+    
 }
 
 nav {
@@ -205,4 +248,47 @@ footer {
 .dropdown:hover .dropbtn {
     background-color: #f2f2f2;
     color: black
+}
+
+.list-container {
+    background-color: #0d637e9f;
+    width: 40%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.list-container ul {
+    list-style-type: square;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.list-container ul li {
+    flex: 0 1 calc(50% - 20px);
+    margin: 10px;
+}
+
+.job-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.job-description {
+    margin-top: 10px; /* Add some spacing between job info and job description */
+}
+
+.list-container p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.address {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    flex: 1; /* Take up remaining space */
+    margin-left: 20px; /* Add some spacing between the date and the address */
 }
